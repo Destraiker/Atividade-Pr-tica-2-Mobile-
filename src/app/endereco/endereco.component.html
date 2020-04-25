@@ -1,0 +1,15 @@
+Endereço:
+Local: {{Location?.address}},
+Cidade: {{Location?.city}},
+Pais: {{Location?.country}}
+
+<button (click)="Display()" id="botao">Abrir Novo Endereço</button>
+
+<div id="formEndereco" style="display: none;">
+    Novo Endereco:
+    Local: <input ref-local type="text"  ngModel="local">
+    Cidade: <input ref-cidade type="text" id="cidade">
+    Pais: <input ref-pais type="text" id="pais">
+
+    <button (click)="Atualizar(local.value,cidade.value,pais.value)">Confirmar</button>
+</div>

@@ -16,7 +16,8 @@
         </div>
         <div>
             <ng-container *ngIf="Eventos.location !==undefined">
-                <app-endereco [Location]="Eventos.location" [Nome]="Eventos.name" (atualizaEndereco)="atulizarEndereco($event)"></app-endereco>
+                <app-endereco [Location]="Eventos.location" [Nome]="Eventos.name"
+                    (atualizaEndereco)="atulizarEndereco($event)"></app-endereco>
 
                 <!--
                     Endereço:
@@ -24,7 +25,8 @@
                     Cidade: {{Eventos.location?.city}},
                     Pais: {{Eventos.location?.country}}
                 -->
-            </ng-container><br>
+            </ng-container>
+            <br>
             <ng-container *ngIf="Eventos.onlineUrl !==undefined">
                 <span>Evento Online!</span>
             </ng-container>

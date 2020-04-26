@@ -3,9 +3,9 @@ Local: {{Location?.address}},
 Cidade: {{Location?.city}},
 Pais: {{Location?.country}}
 
-<button (click)="Display()" id="botao">Abrir Novo Endereço</button>
+<button (click)="Display()" id="botao{{Nome}}">Abrir Novo Endereço</button>
 
-<div id="formEndereco" style="display: none;">
+<div id="formEndereco{{Nome}}" style="display: none;">
     Novo Endereco:
     Local: <input ref-local type="text"  ngModel="local">
     Cidade: <input ref-cidade type="text" id="cidade">
